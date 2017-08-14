@@ -1,2 +1,2 @@
-# escola
-Trabalhos para escola kappa
+# Escola
+Trabalhos para escola Kappa
