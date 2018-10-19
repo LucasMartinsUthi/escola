@@ -1,8 +1,8 @@
 import math as mt
 colunas = 4
 #import numpy as np
-linhas = eval(raw_input('informe o numero de linhas: '))
-colunas = eval(raw_input('informe o numero de colunas: '))
+linhas = eval(input('informe o numero de linhas: '))
+colunas = eval(input('informe o numero de colunas: '))
 
 
 matriz = []
@@ -13,7 +13,7 @@ while cont_linhas <= linhas:
 	cont_colunas = 1
 	
 	while cont_colunas <= colunas:
-		elemento = float(raw_input('informe o elemento ('+str(cont_linhas)+','+str(cont_colunas)+'): '))
+		elemento = float(input('informe o elemento ('+str(cont_linhas)+','+str(cont_colunas)+'): '))
 		Linha.append(elemento)
 		cont_colunas += 1
 	
@@ -26,13 +26,13 @@ while cont_linhas <= linhas:
 def print_matriz(matriz):
 	cont_print = 0
 	while cont_print < linhas:
-		print matriz[cont_print]
+		print (matriz[cont_print])
 		cont_print += 1
 
 
 
 
-print 'sua matriz'
+print ('sua matriz')
 print_matriz(matriz)
 
 matriz2 = [] #linhas q comecam com 1
@@ -56,9 +56,7 @@ for linha in matriz:
 
 matriz4 = matriz 
 matriz = matriz2 + matriz4 + matriz3
-
-
-
+print('lUCAS',matriz)
 
 coluna = 0
 cont_linha = 0
@@ -106,7 +104,7 @@ while coluna < colunas and cont_linha < linhas:
 	matriz, cont1, coluna, cont_linha = escal(matriz, cont1, cont0, coluna, cont_linha)
 
 
-print 'sua matriz escalonada:'
+print ('sua matriz escalonada:')
 print_matriz(matriz)
 
 
